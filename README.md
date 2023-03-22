@@ -93,13 +93,6 @@ Argumentos opcionais:	Descrição:
 ### Ref
 - https://en.wikipedia.org/wiki/Shellhunter_%28software_bug%29#CVE-2014-7186_and_CVE-2014-7187_Details
 - https://blog.inurl.com.br/search?q=shellshock
-- https://github.com/googleinurl/Xpl-SHELLSHOCK-Ch3ck/blob/master/xplSHELLSHOCK.php
-- https://github.com/chelseakomlo/shellshock_demo
-- https://github.com/xdistro/ShellShock/blob/master/shellshock_test.sh
-- https://github.com/capture0x/XSHOCK/blob/master/main.py
-- https://github.com/BuddhaLabs/PacketStorm-Exploits/blob/master/1410-exploits/apachemodcgi-shellshock.txt
-- https://github.com/gajos112/OSCP/blob/master/Shellhunter.txt
-- http://stuff.ipsecs.com/files/ucs-shellshock_pl.txt
 - https://github.com/opsxcq/exploit-CVE-2014-6271
 - https://en.wikipedia.org/wiki/Shellhunter_%28software_bug%29#CVE-2014-7186_and_CVE-2014-7187_Details
 - https://manualdousuario.net/shellshock-bash-falha/
@@ -107,14 +100,11 @@ Argumentos opcionais:	Descrição:
 
 
 ### Roadmap
-I started this project to study a little more python and interact more with APIS like shodan and ipinfo.
+Eu comecei este projeto para estudar um pouco mais de Python e interagir mais com APIs como o Shodan e o Ipinfo.
 * [x] Command line structure
 * [x] Banner
 * [x] File management class
 * [x] HttpRequests management class
-* [x] Thread management class
-* [x] Source file for exploits
-* [x] Color in process
 * [x] Shell Exec on vulnerable targets
 * [x] Process debug
 
