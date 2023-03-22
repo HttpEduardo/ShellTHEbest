@@ -3,31 +3,21 @@
 </h1>
 
 <p align="center">
-  It's a simple tool for test vulnerability shellshock
+  É uma ferramenta simples para testar a vulnerabilidade do shell
 <br/><br/>
   
-<img alt="GPL License" src="https://img.shields.io/github/license/MrCl0wnLab/ShellShockHunter?color=blue">
-  
-<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/MrCl0wnLab/ShellShockHunter">
-
 <img alt="Python 3.8" src="https://img.shields.io/badge/python-3.8-yellow.svg">
 <img alt="Supported_OS Linux orange" src="https://img.shields.io/badge/Supported_OS-Linux-orange.svg">
 <img alt="Supported OS Mac" src="https://img.shields.io/badge/Supported_OS-Mac-orange.svg">
 </p>
 
 ```
-### Shellshock (software bug)
+### Shellhunter (softw bug)
 
-Shellshock, also known as Bashdoor, is a family of security bugs in the Unix 
-Bash shell, the first of which was disclosed on 24 September 2014. Shellshock 
-could enable an attacker to cause Bash to execute arbitrary commands and 
-gain unauthorized access to many Internet-facing services, such as web servers,
-that use Bash to process requests.
+hellhunter, também conhecido como Bashdoor, é uma família de bugs de segurança no shell Unix Bash, sendo o primeiro deles divulgado em 24 de setembro de 2014. hellhunter pode permitir que um invasor faça com que o Bash execute comandos arbitrários e obtenha acesso não autorizado a muitos serviços voltados para a Internet, como servidores web, que usam Bash para processar solicitações.
 
-
-### Disclaimer
-
-This or previous program is for Educational purpose ONLY. Do not use it without permission. The usual disclaimer applies, especially the fact that me is not liable for any damages caused by direct or indirect use of the information or functionality provided by these programs. The author or any Internet provider bears NO responsibility for content or misuse of these programs or any derivatives thereof. By using these programs you accept the fact that any damage (dataloss, system crash, system compromise, etc.) caused by the use of these programs is not ***MrCl0wnLab's*** responsibility.
+Aviso Legal
+Este ou o programa anterior é apenas para fins educacionais. Não o utilize sem permissão. O aviso legal habitual se aplica, especialmente o fato de que eu não sou responsável por quaisquer danos causados pelo uso direto ou indireto das informações ou funcionalidades fornecidas por estes programas. O autor ou qualquer provedor de Internet não tem nenhuma responsabilidade pelo conteúdo ou uso indevido desses programas ou quaisquer derivados deles. Ao utilizar estes programas, você aceita o fato de que qualquer dano (perda de dados, falha do sistema, comprometimento do sistema, etc.) causado pelo uso destes programas não é responsabilidade daVOIDS.
 
 
 ### Installation
@@ -39,33 +29,22 @@ This or previous program is for Educational purpose ONLY. Do not use it without 
 pip install shodan
 pip install ipinfo
 ```
+
 ### Help
 
 ```
 python main.py --help
 
                         
-                                          ,/
-                                        ,'/
-                                      ,' /
-                                    ,'  /_____,
-                                  .'____    ,'    
-                                        /  ,'
-                                      / ,'
-                                      /,'
-                                    /'
-             ____  _     _____ _     _     ____  _      ___       _    
-            / ___|| |__ |___ /| |   | |   / ___|| |__  / _ \  ___| | __
-            \___ \| '_ \  |_ \| |   | |   \___ \| '_ \| | | |/ __| |/ /
-             ___) | | | |___) | |___| |___ ___) | | | | |_| | (__|   < 
-            |____/|_| |_|____/|_____|_____|____/|_| |_|\___/ \___|_|\_\
+
                      __   _   _             _              __                  
                     | _| | | | |_   _ _ __ | |_ ___ _ __  |_ |                 
                     | |  | |_| | | | | '_ \| __/ _ \ '__|  | |                 
                     | |  |  _  | |_| | | | | ||  __/ |     | |                 
                     | |  |_| |_|\__,_|_| |_|\__\___|_|     | |                 
-                    |__|                                  |__| v1.0                
-                      By: MrCl0wn / https://blog.mrcl0wn.com                                                                          
+                    |__|                                  |__|              
+                   
+   By: VOID                                                                         
          
 usage: tool [-h] [--file <ips.txt>] [--range <ip-start>,<ip-end>] 
 [--cmd-cgi <command shell>] [--exec-vuln <command shell>] [--thread <20>] 
@@ -199,21 +178,17 @@ python main.py --range '194.206.187.X,194.206.187.XXX' --check --thread 40 --ssl
 ```
 
 ### Ref
-- https://owasp.org/www-pdf-archive/Shellshock_-_Tudor_Enache.pdf
-- https://en.wikipedia.org/wiki/Shellshock_%28software_bug%29#CVE-2014-7186_and_CVE-2014-7187_Details
+- https://en.wikipedia.org/wiki/Shellhunter_%28software_bug%29#CVE-2014-7186_and_CVE-2014-7187_Details
 - https://blog.inurl.com.br/search?q=shellshock
 - https://github.com/googleinurl/Xpl-SHELLSHOCK-Ch3ck/blob/master/xplSHELLSHOCK.php
 - https://github.com/chelseakomlo/shellshock_demo
 - https://github.com/xdistro/ShellShock/blob/master/shellshock_test.sh
 - https://github.com/capture0x/XSHOCK/blob/master/main.py
-- https://lcamtuf.blogspot.com/2014/10/bash-bug-how-we-finally-cracked.html
-- https://blog.sucuri.net/2014/09/bash-vulnerability-shell-shock-thousands-of-cpanel-sites-are-high-risk.html
 - https://github.com/BuddhaLabs/PacketStorm-Exploits/blob/master/1410-exploits/apachemodcgi-shellshock.txt
-- https://github.com/gajos112/OSCP/blob/master/Shellshock.txt
-- https://dl.packetstormsecurity.net/1606-exploits/sunsecuregdog-shellshock.txt
+- https://github.com/gajos112/OSCP/blob/master/Shellhunter.txt
 - http://stuff.ipsecs.com/files/ucs-shellshock_pl.txt
 - https://github.com/opsxcq/exploit-CVE-2014-6271
-- https://en.wikipedia.org/wiki/Shellshock_%28software_bug%29#CVE-2014-7186_and_CVE-2014-7187_Details
+- https://en.wikipedia.org/wiki/Shellhunter_%28software_bug%29#CVE-2014-7186_and_CVE-2014-7187_Details
 - https://manualdousuario.net/shellshock-bash-falha/
 - https://darrenmartyn.ie/2021/01/24/visualdoor-sonicwall-ssl-vpn-exploit
 
