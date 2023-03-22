@@ -16,9 +16,6 @@
 
 hellhunter, também conhecido como Bashdoor, é uma família de bugs de segurança no shell Unix Bash, sendo o primeiro deles divulgado em 24 de setembro de 2014. hellhunter pode permitir que um invasor faça com que o Bash execute comandos arbitrários e obtenha acesso não autorizado a muitos serviços voltados para a Internet, como servidores web, que usam Bash para processar solicitações.
 
-Aviso Legal
-Este ou o programa anterior é apenas para fins educacionais. Não o utilize sem permissão. O aviso legal habitual se aplica, especialmente o fato de que eu não sou responsável por quaisquer danos causados pelo uso direto ou indireto das informações ou funcionalidades fornecidas por estes programas. O autor ou qualquer provedor de Internet não tem nenhuma responsabilidade pelo conteúdo ou uso indevido desses programas ou quaisquer derivados deles. Ao utilizar estes programas, você aceita o fato de que qualquer dano (perda de dados, falha do sistema, comprometimento do sistema, etc.) causado pelo uso destes programas não é responsabilidade daVOIDS.
-
 
 ### Installation
 > Use the package manager [pip](https://pip.pypa.io/en/stable/)
@@ -37,37 +34,35 @@ python main.py --help
 
                         
 
-                     __   _   _             _              __                  
-                    | _| | | | |_   _ _ __ | |_ ___ _ __  |_ |                 
-                    | |  | |_| | | | | '_ \| __/ _ \ '__|  | |                 
-                    | |  |  _  | |_| | | | | ||  __/ |     | |                 
-                    | |  |_| |_|\__,_|_| |_|\__\___|_|     | |                 
-                    |__|                                  |__|              
+                     _             _             
+                    | |_| | | | | '_ \| __/ _ \ '__|                
+                    | |  |  _  | |_| | | | | ||  __/ |                 
+                    | |  |_| |_|\__,_|_| |_|\__\___|_|                     
+                                                
                    
    By: VOID                                                                         
-         
-usage: tool [-h] [--file <ips.txt>] [--range <ip-start>,<ip-end>] 
-[--cmd-cgi <command shell>] [--exec-vuln <command shell>] [--thread <20>] 
-[--check] [--ssl] [--cgi-file <cgi.txt>] [--timeout <5>] [--all] [--debug]
 
-optional arguments:
-  -h, --help                   show this help message and exit
-  --file <ips.txt>             Input your target host lists
-  --range <ip-start>,<ip-end>  Set range IP Eg.: 192.168.15.1,192.168.15.100
-  --cmd-cgi <command shell>    Define shell command that will be executed in the payload
-  --exec-vuln <command shell>  Executing commands on vulnerable targets
-  --thread <20>, -t <20>       Eg. 20
-  --check                      Check for shellshock vulnerability
-  --ssl                        Enable request with SSL
-  --cgi-file <cgi.txt>         Defines a CGI file to be used
-  --timeout <5>                Set connection timeout
-  --all                        Teste all payloads
-  --debug, -d                  Enable debug mode
+```       
+Argumentos opcionais:	Descrição:
+-h, --help	Mostra esta mensagem de ajuda e sai
+–file <ips.txt>	Insira a lista de hosts de destino
+–range	Define o intervalo de IP, ex.: 192.168.15.1,192.168.15.100
+–cmd-cgi	Define o comando shell que será executado na carga útil
+–exec-vuln	Executa comandos em alvos vulneráveis
+–thread <20>, -t <20>	Define o número de threads, ex.: 20
+–check	Verifica a vulnerabilidade do shellshock
+–ssl	Habilita solicitação com SSL
+–cgi-file <cgi.txt>	Define um arquivo CGI a ser usado
+–timeout <5>	Define o tempo limite de conexão
+–all	Testa todas as cargas úteis
+–debug, -d	Habilita o modo de depuração
+
+```
 
 ```
 
 ### Command e.g:
-```
+
 python main.py --range '194.206.187.X,194.206.187.XXX' --check --thread 40 --ssl
 
 python main.py --range '194.206.187.X,194.206.187.XXX' --check --thread 10 --ssl --cgi-file 'wordlist/cgi.txt'
@@ -83,7 +78,9 @@ python main.py --range '194.206.187.X,194.206.187.XXX' --check --thread 40 --ssl
 python main.py --range '194.206.187.X,194.206.187.XXX' --check --thread 40 --ssl --cgi-file 'wordlist/cgi2.txt' --exec-vuln './exploit -t "_TARGET_"'
 
 python main.py --range '194.206.187.X,194.206.187.XXX' --check --thread 40 --ssl --cgi-file 'wordlist/cgi2.txt' --exec-vuln './exploit -t "_TARGET_"' --debug
+
 ```
+
 ### Prints:
 #### START
 ![Logo](assets/prints/print01.png)
