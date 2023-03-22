@@ -1,8 +1,3 @@
-<p align="center">
-<a href="https://github.com/MrCl0wnLab/ShellShockHunter/">
-  <img src="assets/prints/banner.png" width="700" alt="Banner ShellShockHunter v1.0" />
-</a>
-</p>
 <h1 align="center">
   ShellCaçador
 </h1>
